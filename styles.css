@@ -15,7 +15,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid rebeccapurple;
 }
 
 /* main encompassing container  */
@@ -91,7 +90,7 @@
 .container {
   display: grid;
   grid-template-columns: 2fr 5fr;
-  grid-template-rows: 1fr 13fr 1fr 8fr;
+  grid-template-rows: 1fr 10fr 1fr 8fr;
 }
 
 .cards-title {
@@ -150,24 +149,16 @@ h5 {
   font-weight: 700;
 }
 
-/* End Non-Essential  */
+/* Property Card CSS  */
 
 .property-card {
-  height: 18em;
-  width: 14em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  font-family: "Galliard";
+  height: 22em;
+  width: 18em;
   position: relative;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 16px;
   overflow: hidden;
+  border: 1px solid black;
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
@@ -175,24 +166,40 @@ h5 {
 
 .property-image {
   height: 6em;
-  width: 14em;
+  width: 18em;
   padding: 1em 2em;
   position: Absolute;
   top: 0px;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image: url("https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.one {
+  background-image: url("https://mocah.org/thumbs/897237-Interstellar-movie-space-black-holes-galaxy-spaceship.jpg");
+}
+
+.two {
+  background-image: url("https://wallpaperaccess.com/full/2541792.jpg");
+}
+
+.three {
+  background-image: url("https://theartsdesk.com/sites/default/files/styles/amp_metadata_content_image_min_696px_wide/public/mastimages/COLUMBUS%20IMAGE.jpg?itok=MrRbyPf5");
+}
+
+.four {
+  background-image: url("https://media.wired.com/photos/59328e2b2a990b06268ab836/master/pass/superman_man_of_steel.jpg");
+}
+
+.five {
+  background-image: url("https://www.avforums.com/styles/avf/editorial/block//5abca4f5eaba2ca1b90959d2ee199e9c_3x3.jpg");
+}
 /* Bottom Card Section */
 
 .property-description {
-  background-color: #fafafc;
-  height: 12em;
-  width: 14em;
+  /* background-color: #fafafc; */
+  height: 16em;
+  width: 18em;
   position: absolute;
   bottom: 0em;
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -200,6 +207,10 @@ h5 {
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 /* Social Icons */
@@ -223,7 +234,7 @@ h5 {
   padding: 0px 1em;
 }
 .property-card:hover .property-image {
-  height: 18em;
+  height: 22em;
 }
 
 .property-card:hover .property-social-icons {
@@ -231,26 +242,6 @@ h5 {
 }
 
 .property-card:hover .property-social-icons:hover {
-  background-color: blue;
+  background-color: lightgreen;
   cursor: pointer;
 }
-
-/* Optional
-
-.property-image-title
-{
-text-align:center;
-position:Relative;
-top:30%;
-opacity:0;
-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-color:black;
-font-size:1.2em;
-}
-
-.property-card:hover .property-image-title
-{
-opacity:1;
-}
-
-*/
