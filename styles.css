@@ -16,6 +16,8 @@
   border: 1px solid red;
 }
 
+/* main encompassing container  */
+
 .main {
   display: grid;
   grid-template-columns: 1fr 8fr;
@@ -26,6 +28,7 @@
   grid-template-areas: "logo-container header" "navigation content";
 }
 
+/* left side navigation bar  */
 .navigation {
   display: grid;
   grid-area: navigation;
@@ -45,6 +48,7 @@
   font-size: 25px;
 }
 
+/* header area  */
 .header {
   grid-area: header;
   display: grid;
@@ -98,6 +102,20 @@
   grid-column: 1/3;
 }
 
+.announcements-title {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.announcements {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+
+.trending-title {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
 /* article cards */
 .article {
   background-color: #bccbde;
